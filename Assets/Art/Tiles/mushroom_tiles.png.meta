@@ -1,0 +1,1224 @@
+fileFormatVersion: 2
+guid: 6e3f111eeb745604ebaf97215388d8c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7132575909946480150
+    second: mushroom_tiles_0
+  - first:
+      213: 2342491506609871805
+    second: mushroom_tiles_1
+  - first:
+      213: 8549614516623269495
+    second: mushroom_tiles_2
+  - first:
+      213: 3221127071092750892
+    second: mushroom_tiles_3
+  - first:
+      213: 4795029764201229482
+    second: mushroom_tiles_4
+  - first:
+      213: -4837485839793674646
+    second: mushroom_tiles_5
+  - first:
+      213: 517459182834085200
+    second: mushroom_tiles_6
+  - first:
+      213: -1484129150845909432
+    second: mushroom_tiles_7
+  - first:
+      213: 6129036906493765478
+    second: mushroom_tiles_8
+  - first:
+      213: 8840831094516296974
+    second: mushroom_tiles_9
+  - first:
+      213: 5794579961184012234
+    second: mushroom_tiles_10
+  - first:
+      213: -8414698603341987134
+    second: mushroom_tiles_11
+  - first:
+      213: -3008387624362449818
+    second: mushroom_tiles_12
+  - first:
+      213: -3544892954212823114
+    second: mushroom_tiles_13
+  - first:
+      213: 8550438015174599740
+    second: mushroom_tiles_14
+  - first:
+      213: -4962967485881452038
+    second: mushroom_tiles_15
+  - first:
+      213: -1065649688784181399
+    second: mushroom_tiles_16
+  - first:
+      213: 3659187052954607982
+    second: mushroom_tiles_17
+  - first:
+      213: -5307061936668092533
+    second: mushroom_tiles_18
+  - first:
+      213: 865810483048023336
+    second: mushroom_tiles_19
+  - first:
+      213: 5270411368934588955
+    second: mushroom_tiles_20
+  - first:
+      213: 8279537425212259699
+    second: mushroom_tiles_21
+  - first:
+      213: -3159801276423647897
+    second: mushroom_tiles_22
+  - first:
+      213: 942129492971596681
+    second: mushroom_tiles_23
+  - first:
+      213: -1544430267667267153
+    second: mushroom_tiles_24
+  - first:
+      213: -5917445270736574868
+    second: mushroom_tiles_25
+  - first:
+      213: 2212030736252508729
+    second: mushroom_tiles_26
+  - first:
+      213: -4198364224610102013
+    second: mushroom_tiles_27
+  - first:
+      213: -4604299228149552024
+    second: mushroom_tiles_28
+  - first:
+      213: 2591982870873227397
+    second: mushroom_tiles_29
+  - first:
+      213: 8640745378380715803
+    second: mushroom_tiles_30
+  - first:
+      213: 4658798891437817805
+    second: mushroom_tiles_31
+  - first:
+      213: -7029798787969338044
+    second: mushroom_tiles_32
+  - first:
+      213: 425365870552541711
+    second: mushroom_tiles_33
+  - first:
+      213: -1938197241667342648
+    second: mushroom_tiles_34
+  - first:
+      213: 6948593028175748986
+    second: mushroom_tiles_35
+  - first:
+      213: -2514593685428369379
+    second: mushroom_tiles_36
+  - first:
+      213: 1597513586320361182
+    second: mushroom_tiles_37
+  - first:
+      213: 2163611418544246348
+    second: mushroom_tiles_38
+  - first:
+      213: 3528392943545325347
+    second: mushroom_tiles_39
+  - first:
+      213: -1305704183911266002
+    second: mushroom_tiles_40
+  - first:
+      213: 4932713049668887582
+    second: mushroom_tiles_41
+  - first:
+      213: 6051616454659909672
+    second: mushroom_tiles_42
+  - first:
+      213: -707477872714303297
+    second: mushroom_tiles_43
+  - first:
+      213: 7918572540655532443
+    second: mushroom_tiles_44
+  - first:
+      213: 9113992072750882121
+    second: mushroom_tiles_45
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mushroom_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6165ed500000cf260800000000000000
+      internalID: 7132575909946480150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbd9dc3d93328020800000000000000
+      internalID: 2342491506609871805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e5ad5ea1556a670800000000000000
+      internalID: 8549614516623269495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ab0e0410eb3bc20800000000000000
+      internalID: 3221127071092750892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaca3a65a2e5b8240800000000000000
+      internalID: 4795029764201229482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66ad11424ccddcb0800000000000000
+      internalID: -4837485839793674646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_6
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05de69a92626e2700800000000000000
+      internalID: 517459182834085200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846070b8660576be0800000000000000
+      internalID: -1484129150845909432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667e1dae796be0550800000000000000
+      internalID: 6129036906493765478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d2fdb2a01f0ba70800000000000000
+      internalID: 8840831094516296974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac748f016cb7a6050800000000000000
+      internalID: 5794579961184012234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c243d7043cf83b80800000000000000
+      internalID: -8414698603341987134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_12
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664e13f056f0046d0800000000000000
+      internalID: -3008387624362449818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_13
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf0c59c3a20ecec0800000000000000
+      internalID: -3544892954212823114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c346a78921249a670800000000000000
+      internalID: 8550438015174599740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9f834dd5fff1bb0800000000000000
+      internalID: -4962967485881452038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_16
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967630d014d0631f0800000000000000
+      internalID: -1065649688784181399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_17
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61611acc3b08c230800000000000000
+      internalID: 3659187052954607982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87d6ef59478956b0800000000000000
+      internalID: -5307061936668092533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_19
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82503ec0c0af30c00800000000000000
+      internalID: 865810483048023336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12c6895733442940800000000000000
+      internalID: 5270411368934588955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d345edb63d6e270800000000000000
+      internalID: 8279537425212259699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d41fdfa712624d0800000000000000
+      internalID: -3159801276423647897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_23
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98badf048cd131d00800000000000000
+      internalID: 942129492971596681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_24
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1c453bad4119ae0800000000000000
+      internalID: -1544430267667267153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_25
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c666ee3d0e201eda0800000000000000
+      internalID: -5917445270736574868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_26
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a939a1c36b2be10800000000000000
+      internalID: 2212030736252508729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_27
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305186a4bf96cb5c0800000000000000
+      internalID: -4198364224610102013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c6a822f3e3a10c0800000000000000
+      internalID: -4604299228149552024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_29
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580cb4a20b298f320800000000000000
+      internalID: 2591982870873227397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_30
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b171bf814281ae770800000000000000
+      internalID: 8640745378380715803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_31
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf722c88e067a040800000000000000
+      internalID: 4658798891437817805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_32
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445bd907f33217e90800000000000000
+      internalID: -7029798787969338044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_33
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0aebdd610437e500800000000000000
+      internalID: 425365870552541711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cea6c1b0e32a15e0800000000000000
+      internalID: -1938197241667342648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_35
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fdb2d3b8c5e6060800000000000000
+      internalID: 6948593028175748986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_36
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d180a91bd5e5a1dd0800000000000000
+      internalID: -2514593685428369379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_37
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed64c7c84228b2610800000000000000
+      internalID: 1597513586320361182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_38
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e0f423f11b60e10800000000000000
+      internalID: 2163611418544246348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_39
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327930c10be57f030800000000000000
+      internalID: 3528392943545325347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e294a3076f431ede0800000000000000
+      internalID: -1305704183911266002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_41
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14a2705264847440800000000000000
+      internalID: 4932713049668887582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_42
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828a9e84a19abf350800000000000000
+      internalID: 6051616454659909672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_43
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb83a668f988e26f0800000000000000
+      internalID: -707477872714303297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_44
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b997fe575cb64ed60800000000000000
+      internalID: 7918572540655532443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom_tiles_45
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dda0e80876b7e70800000000000000
+      internalID: 9113992072750882121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
