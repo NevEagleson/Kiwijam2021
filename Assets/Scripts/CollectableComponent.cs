@@ -12,6 +12,8 @@ public class CollectableComponent : MonoBehaviour
     private ParticleSystem m_particles;
     [SerializeField]
     private Collider2D m_trigger;
+    [SerializeField]
+    private AudioSource m_audio;
 
     private bool m_firstSpawn = true;
     private bool m_spawned = false;
@@ -41,6 +43,7 @@ public class CollectableComponent : MonoBehaviour
             m_sprite.gameObject.SetActive(false);
             m_particles.Stop();
             m_particles.Play();
+            m_audio.PlayOneShot(m_audio.clip);
             m_collectable.Collect(player);
             m_spawned = false;
         }

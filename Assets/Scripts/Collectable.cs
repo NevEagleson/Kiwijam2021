@@ -18,6 +18,7 @@ public abstract class Collectable : ScriptableObject
     public abstract event Action Spawn;
 
     public abstract void Collect(Player p);
+    public abstract void DropAll();
 
 
 }

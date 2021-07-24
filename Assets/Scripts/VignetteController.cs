@@ -11,11 +11,15 @@ public class VignetteController : MonoBehaviour
     [SerializeField]
     private AnimationCurve m_alphaCurve;
     [SerializeField]
+    private AnimationCurve m_audioCurve;
+    [SerializeField]
     private Player m_player;
     [SerializeField]
     private float m_fadeTime = 0.2f;
     [SerializeField]
     private float m_maxValue = 9f;
+    [SerializeField]
+    private AudioSource m_music;
 
     private Color m_startColor;
     private Color m_targetColor;
@@ -75,6 +79,8 @@ public class VignetteController : MonoBehaviour
         {
             m_vignette.enabled = true;
         }
+        float vol = m_audioCurve.Evaluate(value);
+        m_music.volume = vol;
     }
     void UpdateColor()
     {

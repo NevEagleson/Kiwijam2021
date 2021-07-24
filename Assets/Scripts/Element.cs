@@ -25,7 +25,7 @@ public class Element : Collectable
         p.SetCollectionElement(this);
         Collected?.Invoke(this);
     }
-    public void DropAll()
+    public override void DropAll()
     {
         NumberCollected.Value = 0;
         Spawn?.Invoke();

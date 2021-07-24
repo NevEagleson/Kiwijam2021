@@ -1,6 +1,7 @@
 //Copyright 2021 Andrew Young
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,6 +26,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float m_damageOverTime = 1f;
 
+    [Header("Audio")]
+    [SerializeField]
+    private AudioSource m_audio;
+    [SerializeField]
+    private AudioClip m_jumpClip;
+    [SerializeField]
+    private AudioClip m_takeDamageClip;
+    [SerializeField]
+    private AudioClip m_adaptClip;
+
     public Player Player => m_player;
 
     private Vector2 m_targetVelocity;
@@ -45,11 +56,13 @@ public class PlayerController : MonoBehaviour
     {
         m_physics = GetComponent<Rigidbody2D>();
         m_player.AdaptedElementChanged += OnPlayerAdapted;
+        m_player.Health.ValueZero += OnPlayerDied;
     }
 
     private void OnDisable()
     {
         m_player.AdaptedElementChanged -= OnPlayerAdapted;
+        m_player.Health.ValueZero -= OnPlayerDied;
     }
 
     void Start()
@@ -75,6 +88,7 @@ public class PlayerController : MonoBehaviour
             {
                 m_player.Health.Value -= 1;
                 m_currentDOTTimer = m_damageOverTime;
+                m_audio.PlayOneShot(m_takeDamageClip);
             }
         }
     }
@@ -151,6 +165,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && m_grounded)
         {
             m_velocity.y = m_jumpTakeOffSpeed;
+            m_audio.PlayOneShot(m_jumpClip);
         }
         else if (Input.GetButtonUp("Jump"))
         {
@@ -175,5 +190,11 @@ public class PlayerController : MonoBehaviour
     void OnPlayerAdapted(Element e)
     {
         m_spriteRenderer.material.SetTexture("_DisplayTex", e.AdaptedPlayerTexture);
+        m_audio.PlayOneShot(m_adaptClip);
+    }
+
+    void OnPlayerDied()
+    {
+        SceneManager.LoadScene("Lose");
     }
 }

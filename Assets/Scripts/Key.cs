@@ -24,4 +24,9 @@ public class Key : Collectable
         Collected = true;
         CollectedChanged?.Invoke();
     }
+    public override void DropAll()
+    {
+        Collected = false;
+        CollectedChanged?.Invoke();
+    }
 }
