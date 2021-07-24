@@ -12,8 +12,8 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
+  - Player
+  - Collectable
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Forground 2
     uniqueID: 3625984535
+    locked: 0
+  - name: UI
+    uniqueID: 4237138267
     locked: 0

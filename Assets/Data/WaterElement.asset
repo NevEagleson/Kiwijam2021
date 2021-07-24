@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb5cf5be877cae4fbc2285db95b8e84, type: 3}
+  m_Name: WaterElement
+  m_EditorClassIdentifier: 
+  m_collectableSprite: {fileID: -2768110487560954726, guid: 535726e9480dad94f862a739be9e95d6, type: 3}
+  m_uiSprite: {fileID: 7180046032709329396, guid: b8f0d19f42db5bc4ba0801a344b581bc, type: 3}
+  m_color: {r: 0.20392159, g: 0.69411767, b: 0.8941177, a: 1}
+  m_adaptedPlayer: {fileID: 2800000, guid: 55ac1cc5c84695643a3efad436ca117a, type: 3}
+  m_adaptedFace: {fileID: -7499938249585835210, guid: b8f0d19f42db5bc4ba0801a344b581bc, type: 3}
+  m_numberCollected: {fileID: 11400000, guid: 92da0ab5634795d4280e03b6a1826d7f, type: 2}

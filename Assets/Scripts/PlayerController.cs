@@ -1,112 +1,179 @@
-using System.Collections;
+//Copyright 2021 Andrew Young
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField, HideInInspector]
+    [SerializeField]
+    private Player m_player;
+    [SerializeField]
+    private SpriteRenderer m_spriteRenderer;
+    [SerializeField]
+    private Animator m_animator;
+
+    [Header("Physics")]
+    [SerializeField]
+    private float m_maxSpeed = 7;
+    [SerializeField]
+    private float m_jumpTakeOffSpeed = 7;
+    [SerializeField]
+    protected float m_minGroundNormalY = .65f;
+    [SerializeField]
+    protected float m_gravityModifier = 1f;
+
+    [Header("Gameplay")]
+    [SerializeField]
+    private float m_damageOverTime = 1f;
+
+    public Player Player => m_player;
+
+    private Vector2 m_targetVelocity;
+    private bool m_grounded;
+    private Vector2 m_groundNormal;
     private Rigidbody2D m_physics;
+    private Vector2 m_velocity;
+    private ContactFilter2D m_contactFilter;
+    private RaycastHit2D[] m_hitBuffer = new RaycastHit2D[16];
+    private List<RaycastHit2D> m_hitBufferList = new List<RaycastHit2D>(16);
 
-    [SerializeField, Range(0f,1f)]
-    private float m_slopeAngle = 0.8f;
-    [SerializeField, Range(0f,1f)]
-    private float m_wallAngle = 0.8f;
-    [SerializeField]
-    private float m_speed = 10f;
-    [SerializeField]
-    private float m_acceleration = 5f;
-    [SerializeField]
-    private float m_brake = 15f;
-    [SerializeField]
-    private float m_jump = 10f;
-    [SerializeField]
-    private Vector2 m_wallJump = new Vector2(7f, 7f);
-    [SerializeField]
-    private float m_normalGravity = 1f;
-    [SerializeField]
-    private float m_wallGravity = 0.5f;
+    private float m_currentDOTTimer = -1f;
 
+    private const float MIN_MOVE_DISTANCE = 0.001f;
+    private const float SHELL_RADIUS = 0.01f;
 
-    private bool m_onGround = false;
-    private bool m_onLeftWall = false;
-    private bool m_onRightWall = false;
-    private Collider2D m_floorCollider = null;
-    private Collider2D m_wallCollider = null;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        m_physics.gravityScale = m_normalGravity;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Vector2 velocity = m_physics.velocity;
-        if(m_onGround && PlayerInput.JumpDown)
-        {
-            velocity.y = m_jump;
-        }
-        float move = PlayerInput.Horizontal;
-        if (move > 0f && velocity.x < m_speed)
-        {
-            velocity.x = Mathf.MoveTowards(velocity.x, m_speed, Time.deltaTime * (velocity.x < 0 ? m_brake : m_acceleration));
-        }
-        if (move < 0f && velocity.x > -m_speed)
-        {
-            velocity.x = Mathf.MoveTowards(velocity.x, -m_speed, Time.deltaTime * (velocity.x > 0 ? m_brake : m_acceleration));
-        }
-        m_physics.velocity = velocity;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Vector2 normal = collision.GetContact(0).normal;
-        if (Vector2.Dot(normal, Vector2.up) > m_slopeAngle)
-        {
-            m_floorCollider = collision.otherCollider;
-            m_onGround = true;
-            return;
-        }
-        float wallDot = Vector2.Dot(normal, Vector2.right);
-        if (wallDot > m_wallAngle)
-        {
-            m_wallCollider = collision.otherCollider;
-            m_onRightWall = true;
-            m_physics.gravityScale = m_wallGravity;
-            return;
-        }
-        if (wallDot < -m_wallAngle)
-        {
-            m_wallCollider = collision.otherCollider;
-            m_onLeftWall = true;
-            m_physics.gravityScale = m_wallGravity;
-            return;
-        }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Collider2D collider = collision.otherCollider;
-        if (m_floorCollider == collider)
-        {
-            m_onGround = false;
-            m_floorCollider = null;
-            return;
-        }
-        if (m_wallCollider == collider)
-        {
-            m_onLeftWall = false;
-            m_onRightWall = false;
-            m_wallCollider = null;
-            m_physics.gravityScale = m_normalGravity;
-        }
-    }
-
-#if UNITY_EDITOR
-    private void Reset()
+    void OnEnable()
     {
         m_physics = GetComponent<Rigidbody2D>();
+        m_player.AdaptedElementChanged += OnPlayerAdapted;
     }
-#endif
+
+    private void OnDisable()
+    {
+        m_player.AdaptedElementChanged -= OnPlayerAdapted;
+    }
+
+    void Start()
+    {
+        m_contactFilter.useTriggers = false;
+        m_contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
+        m_contactFilter.useLayerMask = true;
+    }
+
+    void Update()
+    {
+        m_targetVelocity = Vector2.zero;
+        ComputeVelocity();
+
+        if (m_player.IsSafe)
+        {
+            m_currentDOTTimer = m_damageOverTime;
+        }
+        else
+        {
+            m_currentDOTTimer -= Time.deltaTime;
+            if (m_currentDOTTimer < 0f)
+            {
+                m_player.Health.Value -= 1;
+                m_currentDOTTimer = m_damageOverTime;
+            }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        m_velocity += m_gravityModifier * Physics2D.gravity * Time.deltaTime;
+        m_velocity.x = m_targetVelocity.x;
+
+        m_grounded = false;
+
+        Vector2 deltaPosition = m_velocity * Time.deltaTime;
+
+        Vector2 moveAlongGround = new Vector2(m_groundNormal.y, -m_groundNormal.x);
+
+        Vector2 move = moveAlongGround * deltaPosition.x;
+
+        Movement(move, false);
+
+        move = Vector2.up * deltaPosition.y;
+
+        Movement(move, true);
+    }
+
+    void Movement(Vector2 move, bool yMovement)
+    {
+        float distance = move.magnitude;
+
+        if (distance > MIN_MOVE_DISTANCE)
+        {
+            int count = m_physics.Cast(move, m_contactFilter, m_hitBuffer, distance + SHELL_RADIUS);
+            m_hitBufferList.Clear();
+            for (int i = 0; i < count; i++)
+            {
+                m_hitBufferList.Add(m_hitBuffer[i]);
+            }
+
+            for (int i = 0; i < m_hitBufferList.Count; i++)
+            {
+                Vector2 currentNormal = m_hitBufferList[i].normal;
+                if (currentNormal.y > m_minGroundNormalY)
+                {
+                    m_grounded = true;
+                    if (yMovement)
+                    {
+                        m_groundNormal = currentNormal;
+                        currentNormal.x = 0;
+                    }
+                }
+
+                float projection = Vector2.Dot(m_velocity, currentNormal);
+                if (projection < 0)
+                {
+                    m_velocity = m_velocity - projection * currentNormal;
+                }
+
+                float modifiedDistance = m_hitBufferList[i].distance - SHELL_RADIUS;
+                distance = modifiedDistance < distance ? modifiedDistance : distance;
+            }
+
+
+        }
+
+        m_physics.position = m_physics.position + move.normalized * distance;
+    }
+
+
+    void ComputeVelocity()
+    {
+        Vector2 move = Vector2.zero;
+
+        move.x = Input.GetAxis("Horizontal");
+
+        if (Input.GetButtonDown("Jump") && m_grounded)
+        {
+            m_velocity.y = m_jumpTakeOffSpeed;
+        }
+        else if (Input.GetButtonUp("Jump"))
+        {
+            if (m_velocity.y > 0)
+            {
+                m_velocity.y = m_velocity.y * 0.5f;
+            }
+        }
+
+        if (Mathf.Abs(move.x) > 0.01f && (move.x > 0f == m_spriteRenderer.flipX))
+        {
+            m_spriteRenderer.flipX = !m_spriteRenderer.flipX;
+        }
+
+        m_animator.SetBool("grounded", m_grounded);
+        m_animator.SetFloat("velocityX", Mathf.Abs(m_velocity.x) / m_maxSpeed);
+        m_animator.SetFloat("velocityY", m_velocity.y);
+
+        m_targetVelocity = move * m_maxSpeed;
+    }
+
+    void OnPlayerAdapted(Element e)
+    {
+        m_spriteRenderer.material.SetTexture("_DisplayTex", e.AdaptedPlayerTexture);
+    }
 }

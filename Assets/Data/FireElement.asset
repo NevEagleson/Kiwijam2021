@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb5cf5be877cae4fbc2285db95b8e84, type: 3}
+  m_Name: FireElement
+  m_EditorClassIdentifier: 
+  m_collectableSprite: {fileID: -3834929388386511965, guid: 535726e9480dad94f862a739be9e95d6, type: 3}
+  m_uiSprite: {fileID: 4616537313407236148, guid: b8f0d19f42db5bc4ba0801a344b581bc, type: 3}
+  m_color: {r: 0.91372555, g: 0.47450984, b: 0.18039216, a: 1}
+  m_adaptedPlayer: {fileID: 2800000, guid: a30271f0ef993e1499e39b39e3b8babe, type: 3}
+  m_adaptedFace: {fileID: -8648008687981119647, guid: b8f0d19f42db5bc4ba0801a344b581bc, type: 3}
+  m_numberCollected: {fileID: 11400000, guid: 38cc0ad11c580e345be6fa6ddf7471d7, type: 2}
