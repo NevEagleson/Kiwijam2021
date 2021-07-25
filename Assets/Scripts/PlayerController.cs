@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
         m_physics = GetComponent<Rigidbody2D>();
         m_player.AdaptedElementChanged += OnPlayerAdapted;
         m_player.Health.ValueZero += OnPlayerDied;
+        m_spriteRenderer.material.SetTexture("_DisplayTex", m_player.AdaptedElement.AdaptedPlayerTexture);
     }
 
     private void OnDisable()
