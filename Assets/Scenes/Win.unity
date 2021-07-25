@@ -1359,8 +1359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 214.20355, y: -62.171112}
-  m_SizeDelta: {x: -621.2071, y: -553.4622}
+  m_AnchoredPosition: {x: 188.75002, y: -62.171112}
+  m_SizeDelta: {x: -570.2999, y: -553.4622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &726166534
 MonoBehaviour:
@@ -1382,7 +1382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Return
+  m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1617,7 +1617,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Title
+          m_StringArgument: Credits
           m_BoolArgument: 0
         m_CallState: 2
   m_audio: {fileID: 729281006}
@@ -2328,6 +2328,10 @@ MonoBehaviour:
   m_minGroundNormalY: 0.65
   m_gravityModifier: 1
   m_damageOverTime: 1
+  m_audio: {fileID: 0}
+  m_jumpClip: {fileID: 0}
+  m_takeDamageClip: {fileID: 0}
+  m_adaptClip: {fileID: 0}
 --- !u!70 &1844022928
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
