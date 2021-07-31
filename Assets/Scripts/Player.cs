@@ -76,6 +76,10 @@ public class Player : ScriptableObject
         {
             SetAdaptedElement(CollectionElement);
         }
+        if (CollectionElement == AdaptedElement && Health.Value < Health.InitialValue)
+        {
+            Health.Value += 1;
+        }
     }
 
     public void EnvironmentElementEntered(Element e)
